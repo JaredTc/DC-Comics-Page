@@ -1,0 +1,268 @@
+
+body{
+   
+    list-style-type: none;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+
+
+
+.container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    padding-left: 8%;
+  }
+  
+.container li {
+    float: left;
+  }
+  
+.container li a {
+      font-size: 20px;
+    display: flex;
+   
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 23px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+
+
+.container{
+    padding-top: 70px;
+      font-size: large;
+  }
+
+.sli{
+      display: flex;
+      /* flex-wrap: wrap; */
+      flex-direction: row;
+     
+   
+  }
+
+.court{
+   
+    
+      display: flex;
+      height: 300px;
+      
+    
+      
+  
+  }
+  .court img{
+      width: 50%;
+      height: 300px;
+      
+  }
+
+.text{
+    /* border: 1px black solid; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    width: 40%;
+    text-align: start;
+    padding-right: 5%;
+
+  
+}
+.title{
+    /* border: 1px black solid; */
+    font-size: 25px;
+    height: 230px;
+}
+
+.craveyard{
+   
+    display: flex;
+    height: 300px;
+}
+.craveyard img{
+   width: 50%;
+}
+
+.valoration{
+    /* border: 1px black solid; */
+    font-size: 55%;
+  
+}
+
+
+.best{
+    display: flex;
+   
+    align-items: flex-end;
+    display: flex;
+    font-size: 50%;
+    color: grey;
+}
+
+.title2{
+    /* border: 1px black solid; */
+    font-size: 25px;
+  
+    height: 230px;
+
+}
+.text2{
+    /* border: 1px black solid; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+     width: 35%;
+    text-align: start;
+    padding-right: 5%;
+  
+}
+
+.vol{
+    
+    display: flex;
+    height: 300px;
+}
+
+.fa-star{
+    color: rgb(255, 167, 2);
+    
+}
+
+.star{
+    color: gray;
+}
+
+
+
+.header {
+    align-items: flex-start;
+    background-color: #ffffff;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Fjalla One', sans-serif;
+    max-width: 992px;
+   
+  }
+  
+  .nav-link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px 40px;
+    line-height: 80px;
+  }
+  
+  .nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+  }
+  
+  .nav-menu-item {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+  }
+  
+  .nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+  }
+  
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background-color: #c7c7c7d0;
+    transition: 0.5s;
+  }
+  
+  /* TOGGLE */
+  .nav-toggle {
+    color: rgb(0, 0, 0);
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+  
+    display: none;
+  }
+  
+  /* MOBILE */
+  @media (max-width: 768px) {
+    body {
+      padding-top: 70px;
+    }
+  
+    .header {
+      height: 60px;
+    }
+  
+    .logo {
+      font-size: 25px;
+      padding: 0 20px;
+      line-height: 60px;
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      background-color: #ffffff;
+      position: fixed;
+      top: 60px;
+      width: 100%;
+      padding: 20px 0;
+  
+      height: calc(100% - 60px);
+      overflow-y: auto;
+  
+      left: 100%;
+      transition: left 0.3s;
+    }
+  
+    .nav-menu-item {
+      line-height: 70px;
+    }
+  
+    .nav-menu-link:hover,
+    .nav-menu-link_active {
+      background: none;
+      color: #83c5f7;
+    }
+  
+    .nav-toggle {
+      display: block;
+    }
+  
+    .nav-menu_visible {
+      left: 0;
+    }
+  
+    .nav-toggle:focus:not(:focus-visible) {
+      outline: none;
+    }
+  }
+  
